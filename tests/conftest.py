@@ -15,6 +15,7 @@ from step_defs.carrinho_steps import *  # noqa: F403
 from step_defs.checkout_steps import *  # noqa: F403
 from step_defs.common_steps import *  # noqa: F403
 from step_defs.login_steps import *  # noqa: F403
+from step_defs.performance_steps import *  # noqa: F403
 from step_defs.produtos_steps import *  # noqa: F403
 from step_defs.shopper_journey import ShopperJourney
 
@@ -34,6 +35,7 @@ from saucedemo.pages.login_page import LoginPage
 from saucedemo.pages.menu_component import MenuComponent
 from saucedemo.pages.product_detail_page import ProductDetailPage
 from saucedemo.pages.products_page import ProductsPage
+from saucedemo.performance.navigation_metrics_collector import NavigationMetricsCollector
 
 LOG = logging.getLogger("saucedemo.hooks")
 
@@ -200,6 +202,11 @@ def action_buttons(page: Page) -> ActionButtonsComponent:
 @pytest.fixture
 def browser_navigation(page: Page) -> BrowserNavigation:
     return BrowserNavigation(page)
+
+
+@pytest.fixture
+def metrics_collector(page: Page) -> NavigationMetricsCollector:
+    return NavigationMetricsCollector(page)
 
 
 @pytest.fixture
