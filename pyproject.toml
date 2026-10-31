@@ -14,6 +14,77 @@ addopts = [
     # Filtro padrão (um -m na linha de comando substitui este).
     "-m", "not defeito and not performance",
 ]
+markers = [
+    "login: funcionalidade Login",
+    "produtos: funcionalidade Produtos",
+    "carrinho: funcionalidade Carrinho",
+    "checkout: funcionalidade Checkout",
+    "regressivo: faz parte da regressão funcional",
+    "smoke: caminho crítico, roda primeiro no CI",
+    "positivo: fluxo feliz",
+    "negativo: validação de erro",
+    "ordenacao: agrupamento: ordenação",
+    "detalhe: agrupamento: detalhe do produto",
+    "menu: agrupamento: menu lateral",
+    "calculo: agrupamento: cálculo do pedido",
+    "cancelamento: agrupamento: cancelamento",
+    "validacao: agrupamento: campos obrigatórios",
+    "seguranca: verificação de segurança (funcional no login ou passiva)",
+    "passivo: verificação de segurança somente leitura",
+    "performance: performance percebida; fora do filtro padrão",
+    "defeito: defeito conhecido; fora do filtro padrão",
+    # IDs de rastreabilidade (@CTnnn_<Funcionalidade>): registre o ID de cada cenário novo.
+    "CT001_Carrinho: ID de rastreabilidade",
+    "CT001_Checkout: ID de rastreabilidade",
+    "CT001_Login: ID de rastreabilidade",
+    "CT001_Performance: ID de rastreabilidade",
+    "CT001_Produtos: ID de rastreabilidade",
+    "CT001_Seguranca: ID de rastreabilidade",
+    "CT002_Carrinho: ID de rastreabilidade",
+    "CT002_Checkout: ID de rastreabilidade",
+    "CT002_Login: ID de rastreabilidade",
+    "CT002_Performance: ID de rastreabilidade",
+    "CT002_Produtos: ID de rastreabilidade",
+    "CT002_Seguranca: ID de rastreabilidade",
+    "CT003_Carrinho: ID de rastreabilidade",
+    "CT003_Checkout: ID de rastreabilidade",
+    "CT003_Login: ID de rastreabilidade",
+    "CT003_Performance: ID de rastreabilidade",
+    "CT003_Produtos: ID de rastreabilidade",
+    "CT003_Seguranca: ID de rastreabilidade",
+    "CT004_Carrinho: ID de rastreabilidade",
+    "CT004_Checkout: ID de rastreabilidade",
+    "CT004_Login: ID de rastreabilidade",
+    "CT004_Produtos: ID de rastreabilidade",
+    "CT004_Seguranca: ID de rastreabilidade",
+    "CT005_Carrinho: ID de rastreabilidade",
+    "CT005_Checkout: ID de rastreabilidade",
+    "CT005_Login: ID de rastreabilidade",
+    "CT005_Produtos: ID de rastreabilidade",
+    "CT006_Carrinho: ID de rastreabilidade",
+    "CT006_Checkout: ID de rastreabilidade",
+    "CT006_Login: ID de rastreabilidade",
+    "CT006_Produtos: ID de rastreabilidade",
+    "CT007_Carrinho: ID de rastreabilidade",
+    "CT007_Checkout: ID de rastreabilidade",
+    "CT007_Login: ID de rastreabilidade",
+    "CT007_Produtos: ID de rastreabilidade",
+    "CT008_Carrinho: ID de rastreabilidade",
+    "CT008_Checkout: ID de rastreabilidade",
+    "CT008_Login: ID de rastreabilidade",
+    "CT008_Produtos: ID de rastreabilidade",
+    "CT009_Carrinho: ID de rastreabilidade",
+    "CT009_Checkout: ID de rastreabilidade",
+    "CT009_Login: ID de rastreabilidade",
+    "CT009_Produtos: ID de rastreabilidade",
+    "CT010_Carrinho: ID de rastreabilidade",
+    "CT010_Checkout: ID de rastreabilidade",
+    "CT010_Produtos: ID de rastreabilidade",
+    "CT011_Carrinho: ID de rastreabilidade",
+    "CT011_Checkout: ID de rastreabilidade",
+    "CT012_Carrinho: ID de rastreabilidade",
+    "CT013_Carrinho: ID de rastreabilidade",
+]
 
 [tool.ruff]
 line-length = 100
@@ -24,3 +95,21 @@ select = ["E", "W", "F", "I", "N", "UP", "B", "SIM", "ANN", "RUF", "PT"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["saucedemo"]
+
+# Configurações do projeto (equivalente ao config.properties do Java). Cada chave pode ser
+# sobrescrita por variável de ambiente: chave em maiúsculas com "_" no lugar de "." (ex.:
+# TIMEOUT_SECONDS=20, PERF_LCP_MAX_MS=3000).
+[tool.saucedemo]
+"base.url" = "https://www.saucedemo.com"
+"timeout.seconds" = 10
+"window.width" = 1920
+"window.height" = 1080
+# Evidências: true anexa screenshot de todos os passos (padrão: só do passo que falhou).
+"screenshot.every.step" = false
+# Performance (@performance) - limites em milissegundos.
+"perf.login.page.max.ms" = 3000
+"perf.login.to.inventory.max.ms" = 2000
+# Largest Contentful Paint: 2500 ms é o limite "bom" do Core Web Vitals.
+"perf.lcp.max.ms" = 2500
+# Segurança (@seguranca @passivo): true = achados reprovam o cenário; false = apenas registra.
+"security.fail.on.findings" = false
