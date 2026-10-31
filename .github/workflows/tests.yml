@@ -1,0 +1,223 @@
+name: Testes E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 12 * * *" # 09:00 BRT
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: Navegador da regressão
+        type: choice
+        options: [chrome, firefox, edge]
+        default: chrome
+      tags:
+        description: Expressão de markers do pytest para a regressão
+        type: string
+        default: not defeito and not performance
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  DEFAULT_TAGS: not defeito and not performance
+
+# Execução sequencial: um cenário por vez, um job por vez (smoke -> regressão -> defeitos -> report)
+# e um navegador por vez na matriz (max-parallel: 1). Sem pytest-xdist nem sharding.
+jobs:
+  smoke:
+    name: Smoke (chrome)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Instalar dependências e o Chrome
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps --force chrome
+      - name: Executar @smoke
+        run: pytest -m "smoke and not defeito"
+      - name: Publicar allure-results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: allure-results-smoke
+          path: allure-results
+          if-no-files-found: ignore
+      - name: Publicar evidências
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: evidencias-smoke
+          path: |
+            reports
+            test-results
+          if-no-files-found: ignore
+
+  regression:
+    name: Regressão (${{ matrix.browser }})
+    needs: smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        browser: ${{ fromJSON(github.event_name == 'workflow_dispatch' && format('["{0}"]', inputs.browser) || '["chrome","firefox"]') }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Escolher o navegador
+        env:
+          BROWSER: ${{ matrix.browser }}
+        run: |
+          case "$BROWSER" in
+            chrome)  echo "PW_INSTALL=chrome" >> "$GITHUB_ENV"
+                     echo "PW_ARGS=--browser chromium --browser-channel chrome" >> "$GITHUB_ENV" ;;
+            edge)    echo "PW_INSTALL=msedge" >> "$GITHUB_ENV"
+                     echo "PW_ARGS=--browser chromium --browser-channel msedge" >> "$GITHUB_ENV" ;;
+            firefox) echo "PW_INSTALL=firefox" >> "$GITHUB_ENV"
+                     echo "PW_ARGS=--browser firefox" >> "$GITHUB_ENV" ;;
+            *)       echo "Navegador não suportado: $BROWSER" && exit 1 ;;
+          esac
+      - name: Instalar dependências e o navegador
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps --force "$PW_INSTALL"
+      - name: Executar regressão
+        env:
+          TAGS: ${{ inputs.tags || env.DEFAULT_TAGS }}
+        run: |
+          # PW_ARGS tem várias opções separadas por espaço.
+          # shellcheck disable=SC2086
+          pytest $PW_ARGS -m "$TAGS"
+      - name: Publicar allure-results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: allure-results-regression-${{ matrix.browser }}
+          path: allure-results
+          if-no-files-found: ignore
+      - name: Publicar evidências
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: evidencias-regression-${{ matrix.browser }}
+          path: |
+            reports
+            test-results
+          if-no-files-found: ignore
+
+  known-defects:
+    name: Defeitos conhecidos (@defeito)
+    needs: regression
+    # Roda mesmo se a regressão falhar, como no projeto Java (onde o job era independente).
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # Estes cenários devem falhar enquanto o defeito existir; o job acompanha a correção.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Instalar dependências e o Chrome
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps --force chrome
+      - name: Executar @defeito
+        run: pytest -m defeito
+      - name: Publicar allure-results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: allure-results-known-defects
+          path: allure-results
+          if-no-files-found: ignore
+
+  report:
+    name: Allure Report
+    needs: [smoke, regression, known-defects]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      ALLURE_VERSION: 2.46.1
+      PUBLISH: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+      REPORT_URL: https://lucasspaula0509.github.io/saucedemo-automation-portfolio_playwright/
+    steps:
+      - uses: actions/checkout@v7
+      # O Allure CLI roda na JVM.
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Instalar o Allure CLI
+        run: |
+          curl -sSL -o allure.zip "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.zip"
+          unzip -q allure.zip -d "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/allure-${ALLURE_VERSION}/bin" >> "$GITHUB_PATH"
+      - name: Juntar allure-results dos jobs
+        uses: actions/download-artifact@v8
+        with:
+          pattern: allure-results-*
+          path: allure-results
+          merge-multiple: true
+      - name: Recuperar histórico do report anterior
+        uses: actions/checkout@v7
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Preparar histórico e executor
+        run: |
+          mkdir -p allure-results
+          if [ -d gh-pages/history ]; then
+            cp -r gh-pages/history allure-results/history
+          fi
+          cat > allure-results/executor.json <<EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "url": "${{ github.server_url }}/${{ github.repository }}/actions",
+            "buildOrder": ${{ github.run_number }},
+            "buildName": "${{ github.workflow }} #${{ github.run_number }}",
+            "buildUrl": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "reportUrl": "${REPORT_URL}",
+            "reportName": "Swag Labs - Allure Report"
+          }
+          EOF
+      - name: Gerar Allure Report
+        run: allure generate allure-results --clean -o allure-report
+      - name: Publicar report como artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: allure-report
+          path: allure-report
+      - name: Publicar no GitHub Pages
+        if: env.PUBLISH == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Allure Report - ${{ github.workflow }} #${{ github.run_number }}"
