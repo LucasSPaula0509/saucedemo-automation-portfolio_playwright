@@ -18,6 +18,15 @@ addopts = [
     "--strict-markers",
     # Filtro padrão (um -m na linha de comando substitui este).
     "-m", "not defeito and not performance",
+    # Allure e links de rastreabilidade (troque pelos endereços do seu gerenciador).
+    "--alluredir=allure-results",
+    "--clean-alluredir",
+    "--allure-link-pattern=issue:https://github.com/LucasSPaula0509/saucedemo-automation-portifolio/issues?q={}",
+    "--allure-link-pattern=tms:https://tms.example.com/browse/{}",
+    # Evidências em arquivo: screenshot das falhas (test-results/) e relatório do Cucumber.
+    "--screenshot=only-on-failure",
+    "--output=test-results",
+    "--cucumberjson=reports/cucumber.json",
 ]
 markers = [
     "login: funcionalidade Login",
@@ -100,6 +109,7 @@ select = ["E", "W", "F", "I", "N", "UP", "B", "SIM", "ANN", "RUF", "PT"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["saucedemo"]
+known-third-party = ["allure"]
 
 # Configurações do projeto (equivalente ao config.properties do Java). Cada chave pode ser
 # sobrescrita por variável de ambiente: chave em maiúsculas com "_" no lugar de "." (ex.:

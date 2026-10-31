@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Defeitos conhecidos",
+    "description": "Cenários @defeito que continuam falhando enquanto o defeito existir (ver known-defects.properties)",
+    "matchedStatuses": ["failed", "broken"],
+    "messageRegex": "(?s)\\[Defeito conhecido .*"
+  },
+  {
+    "name": "Falhas de infraestrutura/driver",
+    "description": "Erros de navegador, rede ou WebDriver (cenário interrompido antes da validação)",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Falhas de asserção",
+    "description": "O comportamento do site diverge do resultado esperado no cenário",
+    "matchedStatuses": ["failed"]
+  }
+]
