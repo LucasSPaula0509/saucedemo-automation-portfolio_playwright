@@ -1,0 +1,25 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Configuração local (copie de .env.example)
+.env
+
+# Resultados e relatórios gerados
+allure-results/
+allure-report/
+test-results/
+reports/
+.lighthouseci/
+zap-report/
+
+# IDEs
+.idea/
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
