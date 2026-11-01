@@ -21,7 +21,7 @@ addopts = [
     # Allure e links de rastreabilidade (troque pelos endereços do seu gerenciador).
     "--alluredir=allure-results",
     "--clean-alluredir",
-    "--allure-link-pattern=issue:https://github.com/LucasSPaula0509/saucedemo-automation-portifolio/issues?q={}",
+    "--allure-link-pattern=issue:https://github.com/LucasSPaula0509/saucedemo-automation-portfolio_java/issues?q={}",
     "--allure-link-pattern=tms:https://tms.example.com/browse/{}",
     # Evidências em arquivo: screenshot das falhas (test-results/) e relatório do Cucumber.
     "--screenshot=only-on-failure",
