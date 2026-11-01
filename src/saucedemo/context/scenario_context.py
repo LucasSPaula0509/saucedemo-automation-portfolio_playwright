@@ -14,6 +14,7 @@ class ScenarioContext:
     _username: str | None = None
     _navigation: NavigationMetrics | None = None
     _login_to_inventory_ms: int | None = None
+    _response_headers: dict[str, str] | None = None
 
     @property
     def username(self) -> str:
@@ -45,3 +46,14 @@ class ScenarioContext:
     @login_to_inventory_ms.setter
     def login_to_inventory_ms(self, value: int) -> None:
         self._login_to_inventory_ms = value
+
+    @property
+    def response_headers(self) -> dict[str, str]:
+        """Cabeçalhos capturados no passo "Quando" e avaliados no passo "Então"."""
+        if self._response_headers is None:
+            raise RuntimeError("Nenhum cabeçalho de resposta capturado no cenário")
+        return self._response_headers
+
+    @response_headers.setter
+    def response_headers(self, value: dict[str, str]) -> None:
+        self._response_headers = value

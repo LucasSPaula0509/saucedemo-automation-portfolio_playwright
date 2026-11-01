@@ -17,6 +17,7 @@ from step_defs.common_steps import *  # noqa: F403
 from step_defs.login_steps import *  # noqa: F403
 from step_defs.performance_steps import *  # noqa: F403
 from step_defs.produtos_steps import *  # noqa: F403
+from step_defs.seguranca_steps import *  # noqa: F403
 from step_defs.shopper_journey import ShopperJourney
 
 from saucedemo.config import settings
@@ -36,6 +37,8 @@ from saucedemo.pages.menu_component import MenuComponent
 from saucedemo.pages.product_detail_page import ProductDetailPage
 from saucedemo.pages.products_page import ProductsPage
 from saucedemo.performance.navigation_metrics_collector import NavigationMetricsCollector
+from saucedemo.security.security_headers_inspector import SecurityHeadersInspector
+from saucedemo.security.session_cookie_inspector import SessionCookieInspector
 
 LOG = logging.getLogger("saucedemo.hooks")
 
@@ -207,6 +210,16 @@ def browser_navigation(page: Page) -> BrowserNavigation:
 @pytest.fixture
 def metrics_collector(page: Page) -> NavigationMetricsCollector:
     return NavigationMetricsCollector(page)
+
+
+@pytest.fixture
+def cookie_inspector(page: Page) -> SessionCookieInspector:
+    return SessionCookieInspector(page)
+
+
+@pytest.fixture
+def headers_inspector(page: Page) -> SecurityHeadersInspector:
+    return SecurityHeadersInspector(page)
 
 
 @pytest.fixture
