@@ -9,7 +9,7 @@ CATEGORIES: Final = Path(__file__).resolve().parents[3] / "allure" / "categories
 
 
 def write_environment(results_dir: Path, environment: dict[str, str]) -> None:
-    """environment.properties com os campos do Java (Python no lugar de Java, sem Grid)."""
+    """environment.properties com os campos do Java ("Python" no lugar de "Java")."""
     values = {**environment, "OS": f"{platform.system()} {platform.release()}"}
     values["Python"] = platform.python_version()
     content = "".join(f"{key}={value}\n" for key, value in values.items())
