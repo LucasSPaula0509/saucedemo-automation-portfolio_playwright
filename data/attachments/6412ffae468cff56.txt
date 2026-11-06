@@ -1,0 +1,2 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Preenchimento automático do campo de senha
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Autocomplete do campo de senha]: Campo de senha com autocomplete ausente (esperado: current-password, new-password, off)
