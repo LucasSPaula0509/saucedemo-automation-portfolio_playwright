@@ -1,0 +1,376 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","368","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","326","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","518","Ordenação padrão do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","627","Cancelar no formulário de informações retorna ao carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","229","Acesso via HTTP é redirecionado para HTTPS","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","194","Cabeçalhos de segurança da página de login","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","471","Contador do carrinho some quando o último produto é removido","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","1339","Reset App State esvazia o carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","2298","Link ""About"" direciona para o site da Sauce Labs","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","312","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","229","Preenchimento automático do campo de senha","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","359","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","612","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","518","Exibição do catálogo após autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","601","Exibição do catálogo após autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","506","Iniciar o checkout a partir do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","565","Ordenação volta ao padrão ao retornar do detalhe do produto","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","523","Adicionar um produto ao carrinho pela lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","304","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","559","Opções disponíveis no menu lateral","","2026-11-13","failed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","403","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","407","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","660","Cálculo de subtotal, imposto de 8% e total","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","352","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","5361","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","11571","Reset App State restaura os botões dos produtos","","2026-11-13","failed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","521","Continuar comprando a partir do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","349","Login com credenciais válidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","626","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","491","Ordenação padrão do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","1336","Reset App State esvazia o carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","579","Remover um produto dentro do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","426","Ordenação por menor preço","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","235","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","550","Estado do carrinho é mantido entre o detalhe e a lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","704","Concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","586","Carrinho mantém os produtos após recarregar a página","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","360","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","203","Acesso via HTTP é redirecionado para HTTPS","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","619","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","407","Ordenação por nome de Z a A","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","480","Retorno do detalhe para a lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","1317","Logout pelo menu lateral","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","393","Login com credenciais válidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","1289","Logout pelo menu lateral","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","2","Cabeçalhos de segurança da página de login","","2026-11-13","skipped","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","412","Ordenação por maior preço","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","561","Checkout bloqueado com carrinho vazio","","2026-11-13","failed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","320","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","301","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","270","Campo de senha mascara os caracteres digitados","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","369","Login com usuário bloqueado","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","366","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","408","Ordenação por maior preço","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","443","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","742","Cálculo de subtotal, imposto de 8% e total","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","522","Carrinho mantém os produtos após recarregar a página","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","364","Atributos do cookie de sessão após o login","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","643","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","626","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","551","Carrinho lista os produtos adicionados","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","704","Cancelar no resumo retorna aos produtos mantendo o carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","729","Cancelar no resumo retorna aos produtos mantendo o carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","1339","Sessão encerrada após logout impede retorno à área logada","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","441","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","493","Remover um produto pela lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","360","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","461","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","274","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","696","Cálculo de subtotal, imposto de 8% e total","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","514","Adicionar um produto ao carrinho pela página de detalhe","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","545","Estado do carrinho é mantido entre o detalhe e a lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","509","Continuar comprando a partir do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","655","Resumo exibe forma de pagamento e entrega","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","389","Atributos do cookie de sessão após o login","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","413","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","376","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","626","Cancelar no formulário de informações retorna ao carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","367","Login com usuário bloqueado","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","720","Carrinho é esvaziado após concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","396","Detalhe do produto exibe as mesmas informações do catálogo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","273","Campo de senha mascara os caracteres digitados","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","567","Iniciar o checkout a partir do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","945","Concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","813","Voltar para os produtos após concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","309","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","590","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","511","Remover um produto pela lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","595","Remover um produto dentro do carrinho","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","321","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","261","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","538","Contador do carrinho acumula vários produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","665","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","540","Retorno do detalhe para a lista de produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","2411","Link ""About"" direciona para o site da Sauce Labs","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","457","Ordenação por nome de Z a A","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","390","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","385","Ordenação por menor preço","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","269","Acesso direto a páginas internas sem autenticação","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","388","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","393","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","5383","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","370","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","389","Botão do produto muda para ""Remove"" após adicioná-lo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","630","Resumo exibe forma de pagamento e entrega","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","801","Voltar para os produtos após concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","354","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","374","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","1358","Sessão encerrada após logout impede retorno à área logada","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","620","Validação dos campos obrigatórios do checkout","","2026-11-13","passed","2026-11-13","","","",""
+"Como responsável pela qualidade da loja Swag Labs
+Quero observar as proteções de transporte, sessão e navegador
+Para registrar riscos sem atacar o site","232","Preenchimento automático do campo de senha","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","361","Login com perfis de usuário aceitos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","699","Carrinho é esvaziado após concluir a compra","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","412","Botão do produto muda para ""Remove"" após adicioná-lo","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","788","Cálculo de subtotal, imposto de 8% e total","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","494","Contador do carrinho acumula vários produtos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","628","Avançar para o resumo com dados válidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","342","Login com campos obrigatórios não preenchidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","469","Contador do carrinho some quando o último produto é removido","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","556","Carrinho lista os produtos adicionados","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero visualizar, ordenar e detalhar os produtos
+Para escolher o que desejo comprar","503","Ordenação volta ao padrão ao retornar do detalhe do produto","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","532","Adicionar um produto ao carrinho pela página de detalhe","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente da loja Swag Labs
+Quero me autenticar com minhas credenciais
+Para acessar o catálogo de produtos e realizar compras","373","Login com credenciais inválidas","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero informar meus dados e confirmar o pedido
+Para concluir a compra dos produtos do carrinho","664","Avançar para o resumo com dados válidos","","2026-11-13","passed","2026-11-13","","","",""
+"Como cliente autenticado no Swag Labs
+Quero adicionar e remover produtos do carrinho
+Para montar o pedido que desejo finalizar","927","Adicionar um produto ao carrinho pela lista de produtos","","2026-11-13","passed","2026-11-13","","","",""

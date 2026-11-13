@@ -1,0 +1,4 @@
+Itens: [$9.99]
+Subtotal (soma dos itens): $9.99
+Imposto (8% de $9.99, HALF_UP): $0.80
+Total (subtotal + imposto): $10.79

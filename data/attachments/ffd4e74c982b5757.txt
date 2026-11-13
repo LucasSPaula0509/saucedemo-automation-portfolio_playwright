@@ -1,0 +1,1 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Avançar para o resumo com dados válidos

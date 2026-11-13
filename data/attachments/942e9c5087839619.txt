@@ -1,0 +1,1 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Cancelar no formulário de informações retorna ao carrinho
