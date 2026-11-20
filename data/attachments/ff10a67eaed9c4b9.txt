@@ -1,0 +1,6 @@
+{
+  "nome": "session-username",
+  "secure": false,
+  "httpOnly": false,
+  "sameSite": "None"
+}

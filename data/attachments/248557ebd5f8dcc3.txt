@@ -1,0 +1,4 @@
+Cabeçalho Content-Security-Policy ausente
+Proteção contra clickjacking ausente (X-Frame-Options ou CSP frame-ancestors)
+Cabeçalho X-Content-Type-Options diferente de 'nosniff' ou ausente
+Cabeçalho Strict-Transport-Security (HSTS) ausente

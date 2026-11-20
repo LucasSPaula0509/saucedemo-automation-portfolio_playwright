@@ -1,0 +1,3 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Atributos do cookie de sessão após o login
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cookie de sessão]: Cookie 'session-username' sem o atributo Secure
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cookie de sessão]: Cookie 'session-username' sem o atributo HttpOnly
