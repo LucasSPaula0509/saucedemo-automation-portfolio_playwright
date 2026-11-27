@@ -1,0 +1,2 @@
+2026-11-27T20:33:33.390834 ERROR Permissions policy violation: unload is not allowed in this document.
+2026-11-27T20:33:33.452324 VERBOSE [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o

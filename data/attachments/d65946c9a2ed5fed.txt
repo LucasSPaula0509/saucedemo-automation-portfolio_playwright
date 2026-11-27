@@ -1,0 +1,1 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Cálculo de subtotal, imposto de 8% e total

@@ -1,0 +1,5 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Cabeçalhos de segurança da página de login
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cabeçalhos de segurança]: Cabeçalho Content-Security-Policy ausente
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cabeçalhos de segurança]: Proteção contra clickjacking ausente (X-Frame-Options ou CSP frame-ancestors)
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cabeçalhos de segurança]: Cabeçalho X-Content-Type-Options diferente de 'nosniff' ou ausente
+WARNING  saucedemo.steps.seguranca:seguranca_steps.py:103 Achado de segurança [Cabeçalhos de segurança]: Cabeçalho Strict-Transport-Security (HSTS) ausente

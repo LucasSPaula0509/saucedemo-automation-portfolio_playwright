@@ -1,0 +1,1 @@
+INFO     saucedemo.hooks:conftest.py:245 Iniciando cenário: Campo de senha mascara os caracteres digitados

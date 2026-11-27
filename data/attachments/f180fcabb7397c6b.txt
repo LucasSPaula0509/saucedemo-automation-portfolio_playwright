@@ -1,0 +1,2 @@
+Cookie 'session-username' sem o atributo Secure
+Cookie 'session-username' sem o atributo HttpOnly
